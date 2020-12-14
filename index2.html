@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="newmain.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="logo">
+        <!-- <h1 style="text-align:center; margin-bottom: 20px;">Nutri Track</h1> -->
+        <img src="logo.png" alt="">
+    </div>
+
+
+    <div class="card">
+        <img src="unibic.jpg" alt="Denim Jeans" style="width:70%">
+        <h1>UB Ginger Cookies</h1>
+        <p class="price">100 g</p>
+        <p><button onclick="hideNutri();">Add to Intake</button></p>
+    </div>
+
+    <div id="nutri-table">
+        <h1>Nutrition Facts</h1>
+        <hr>
+        <h4>1 serving per pack</h4>
+        <div id="serving">
+            <h3>Serving Size</h3>
+            <p>100 g</p>
+        </div>
+        <hr>
+
+        <table>
+            <caption>Amount per Serving</caption>
+            <tr id="calories">
+                <td>Calories</td>
+                <td>454</td>
+            </tr>
+            <tr>
+                <td>Fat 14.1g</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Saturated Fat 8.2g</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Total Carbohydrate 76g</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td>Sugar 35g</td>
+                <td>24%</td>
+            </tr>
+            <tr>
+                <td>Protien 5.9g</td>
+                <td>0%</td>
+            </tr>
+        </table>
+        <hr>
+        <h5>*A significant source of saturated fat, dietary fiber,
+            vitamin D, calcium, iron and potassium.</h5>
+    </div>
+
+    <div id="nutri-new">
+        <h1>Nutritional Content</h1>
+        <hr>
+        <div id="piechart" style="width: 100%; margin: auto;"></div>
+        <table id="suggestion">
+            <caption>Sugar Intake Suggested Daily</caption>
+            <tr>
+                <td>Content</td>
+                <td>Suggested</td>
+            </tr>
+            <tr>
+                <td>35g</td>
+                <td>40g</td>
+            </tr>
+        </table>
+        <hr>
+        <ul id="contains">
+            <li>Contains <mark>refined wheat flour</mark>.</li>
+            <li>Edible Vegatable Oil. Some vegetable oils are high in omega-6 fatty acids.</li>
+            <li>Contains Household Spices.</li>
+        </ul>
+        <hr>
+        <p><i>Sugar Equivalent to <mark>13 mins of Running.</mark></i></p><br><br>
+        <hr>
+        <h4><mark>Allergic Warning</mark></h4>
+        <p>Contains Gluten, Soya and Nuts</p>
+        <br><br>
+        <audio src="#" id="audio"></audio>
+        <button class="readout" onclick="">Read Out</button>
+        <button class="readout"><a href="new.html">Weekly Data</a></button>
+</body>
+
+</html>
